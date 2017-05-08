@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      In-App Editor
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list *ngIf="imgURL">
+    <ion-item>
+      <h2></h2>
+      <img src="{{imgURL}}" />
+    </ion-item>
+  </ion-list>
+
+  <button ion-button (click)="onImageSelect($event)">Select Image for Editing</button>
+</ion-content>
